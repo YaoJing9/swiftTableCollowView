@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E2P-rY-U6u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewText" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pds-hy-fjZ">
+                                <rect key="frame" x="20" y="84" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yg6-NA-pCz"/>
+                                </constraints>
+                                <state key="normal" title="CustomTableView"/>
+                                <connections>
+                                    <segue destination="sE2-Dj-b6a" kind="push" id="UGz-cd-nZf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pds-hy-fjZ" secondAttribute="trailing" constant="20" id="7dn-ef-5xo"/>
+                            <constraint firstItem="pds-hy-fjZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fAr-yr-r7u"/>
+                            <constraint firstItem="pds-hy-fjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="i8P-pB-fcA"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WOA-pm-h9Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-186.40000000000001" y="-63.418290854572717"/>
+        </scene>
+        <!--View Controller Table View-->
+        <scene sceneID="gXo-8t-5sU">
+            <objects>
+                <viewController id="sE2-Dj-b6a" customClass="ViewControllerTableView" customModule="TableViewText" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2me-KQ-NEV"/>
+                        <viewControllerLayoutGuide type="bottom" id="icD-Mt-AUo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zjS-2s-0aK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="eFD-eA-gzp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sE2-Dj-b6a" id="SeJ-qT-BIi"/>
+                                    <outlet property="delegate" destination="sE2-Dj-b6a" id="EVW-sx-LXS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eFD-eA-gzp" firstAttribute="top" secondItem="2me-KQ-NEV" secondAttribute="bottom" id="72B-Be-De6"/>
+                            <constraint firstAttribute="trailing" secondItem="eFD-eA-gzp" secondAttribute="trailing" id="C3d-n5-imu"/>
+                            <constraint firstItem="icD-Mt-AUo" firstAttribute="top" secondItem="eFD-eA-gzp" secondAttribute="bottom" id="MYE-xm-TVe"/>
+                            <constraint firstItem="eFD-eA-gzp" firstAttribute="leading" secondItem="zjS-2s-0aK" secondAttribute="leading" id="o9A-go-Xdy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c7J-KY-h8m"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="eFD-eA-gzp" id="m6l-uf-Ufm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3s-Ru-LjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514" y="-63"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qHn-Rp-h4V">
+            <objects>
+                <navigationController id="E2P-rY-U6u" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2of-ca-axf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AS0-jQ-fKh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2F1-Ic-qQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903" y="-63"/>
         </scene>
     </scenes>
 </document>

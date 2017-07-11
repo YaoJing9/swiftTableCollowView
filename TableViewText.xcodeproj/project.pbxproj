@@ -12,6 +12,10 @@
 		A44474EB1F0F8D600070B504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44474E91F0F8D600070B504 /* Main.storyboard */; };
 		A44474ED1F0F8D600070B504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44474EC1F0F8D600070B504 /* Assets.xcassets */; };
 		A44474F01F0F8D600070B504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44474EE1F0F8D600070B504 /* LaunchScreen.storyboard */; };
+		A44474F81F0F91530070B504 /* ViewControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44474F71F0F91530070B504 /* ViewControllerTableView.swift */; };
+		A44DC3771F147C8B00D20891 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */; };
+		A4F39DED1F13BB0D00720B50 /* CoutomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F39DEB1F13BB0D00720B50 /* CoutomeCell.swift */; };
+		A4F39DEE1F13BB0D00720B50 /* CoutomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		A44474EC1F0F8D600070B504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A44474EF1F0F8D600070B504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44474F11F0F8D600070B504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44474F71F0F91530070B504 /* ViewControllerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableView.swift; sourceTree = "<group>"; };
+		A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		A4F39DEB1F13BB0D00720B50 /* CoutomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoutomeCell.swift; sourceTree = "<group>"; };
+		A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoutomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,23 @@
 				A44474E51F0F8D600070B504 /* AppDelegate.swift */,
 				A44474E71F0F8D600070B504 /* ViewController.swift */,
 				A44474E91F0F8D600070B504 /* Main.storyboard */,
+				A44DC3781F149ED000D20891 /* CustomTableView */,
+				A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */,
 				A44474EC1F0F8D600070B504 /* Assets.xcassets */,
 				A44474EE1F0F8D600070B504 /* LaunchScreen.storyboard */,
 				A44474F11F0F8D600070B504 /* Info.plist */,
 			);
 			path = TableViewText;
+			sourceTree = "<group>";
+		};
+		A44DC3781F149ED000D20891 /* CustomTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A44474F71F0F91530070B504 /* ViewControllerTableView.swift */,
+				A4F39DEB1F13BB0D00720B50 /* CoutomeCell.swift */,
+				A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */,
+			);
+			name = CustomTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +116,8 @@
 				TargetAttributes = {
 					A44474E11F0F8D600070B504 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 6S9W3HX6S6;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -123,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F39DEE1F13BB0D00720B50 /* CoutomeCell.xib in Resources */,
 				A44474F01F0F8D600070B504 /* LaunchScreen.storyboard in Resources */,
 				A44474ED1F0F8D600070B504 /* Assets.xcassets in Resources */,
 				A44474EB1F0F8D600070B504 /* Main.storyboard in Resources */,
@@ -136,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F39DED1F13BB0D00720B50 /* CoutomeCell.swift in Sources */,
+				A44DC3771F147C8B00D20891 /* NSObjectExtension.swift in Sources */,
 				A44474E81F0F8D600070B504 /* ViewController.swift in Sources */,
+				A44474F81F0F91530070B504 /* ViewControllerTableView.swift in Sources */,
 				A44474E61F0F8D600070B504 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,10 +285,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6S9W3HX6S6;
 				INFOPLIST_FILE = TableViewText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkjoy.TableViewText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78956a30-4138-470a-b451-1c23121f75ef";
+				PROVISIONING_PROFILE_SPECIFIER = AllBundleID_XX;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,10 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6S9W3HX6S6;
 				INFOPLIST_FILE = TableViewText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkjoy.TableViewText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78956a30-4138-470a-b451-1c23121f75ef";
+				PROVISIONING_PROFILE_SPECIFIER = AllBundleID_XX;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +332,7 @@
 				A44474F61F0F8D600070B504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
