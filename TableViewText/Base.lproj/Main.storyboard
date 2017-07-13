@@ -31,11 +31,24 @@
                                     <segue destination="sE2-Dj-b6a" kind="push" id="UGz-cd-nZf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njf-Tw-c2R">
+                                <rect key="frame" x="20" y="134" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2pd-Uw-2EU"/>
+                                </constraints>
+                                <state key="normal" title="CustomCollectionViewVC"/>
+                                <connections>
+                                    <segue destination="M1V-DI-sau" kind="push" id="CM0-gJ-aFW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pds-hy-fjZ" secondAttribute="trailing" constant="20" id="7dn-ef-5xo"/>
+                            <constraint firstItem="njf-Tw-c2R" firstAttribute="top" secondItem="pds-hy-fjZ" secondAttribute="bottom" constant="20" id="de2-44-l7O"/>
                             <constraint firstItem="pds-hy-fjZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fAr-yr-r7u"/>
+                            <constraint firstAttribute="trailing" secondItem="njf-Tw-c2R" secondAttribute="trailing" constant="20" id="gyz-RB-6wu"/>
+                            <constraint firstItem="njf-Tw-c2R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="hM2-WD-5ye"/>
                             <constraint firstItem="pds-hy-fjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="i8P-pB-fcA"/>
                         </constraints>
                     </view>
@@ -44,6 +57,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-186.40000000000001" y="-63.418290854572717"/>
+        </scene>
+        <!--Custom Collection ViewVC-->
+        <scene sceneID="p4G-A9-lFy">
+            <objects>
+                <viewController id="M1V-DI-sau" customClass="CustomCollectionViewVC" customModule="TableViewText" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UOS-nB-9py"/>
+                        <viewControllerLayoutGuide type="bottom" id="bv9-kL-Dbf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xsk-uV-UA3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hny-dG-B69">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="j5C-g5-0bh">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="M1V-DI-sau" id="ZST-Xt-9bm"/>
+                                    <outlet property="delegate" destination="M1V-DI-sau" id="CmG-gb-MCp"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hny-dG-B69" firstAttribute="leading" secondItem="xsk-uV-UA3" secondAttribute="leading" id="8Au-4w-PWk"/>
+                            <constraint firstItem="bv9-kL-Dbf" firstAttribute="top" secondItem="hny-dG-B69" secondAttribute="bottom" id="Nyd-Xr-Tw9"/>
+                            <constraint firstItem="hny-dG-B69" firstAttribute="top" secondItem="UOS-nB-9py" secondAttribute="bottom" id="u0l-ng-tAd"/>
+                            <constraint firstAttribute="trailing" secondItem="hny-dG-B69" secondAttribute="trailing" id="xHE-eL-pJb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6vq-t1-2j1"/>
+                    <connections>
+                        <outlet property="flowLayout" destination="j5C-g5-0bh" id="JiH-oj-21e"/>
+                        <outlet property="mainCollectionView" destination="hny-dG-B69" id="veO-G3-akK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6r-WO-8Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="238"/>
         </scene>
         <!--View Controller Table View-->
         <scene sceneID="gXo-8t-5sU">
@@ -81,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3s-Ru-LjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="514" y="-63"/>
+            <point key="canvasLocation" x="636" y="-395"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qHn-Rp-h4V">

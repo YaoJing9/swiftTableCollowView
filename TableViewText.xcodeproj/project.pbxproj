@@ -14,6 +14,9 @@
 		A44474F01F0F8D600070B504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44474EE1F0F8D600070B504 /* LaunchScreen.storyboard */; };
 		A44474F81F0F91530070B504 /* ViewControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44474F71F0F91530070B504 /* ViewControllerTableView.swift */; };
 		A44DC3771F147C8B00D20891 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */; };
+		A44DC37B1F14B1CE00D20891 /* CustomCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DC37A1F14B1CE00D20891 /* CustomCollectionViewVC.swift */; };
+		A44DC37E1F14B6C800D20891 /* CoutomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DC37C1F14B6C800D20891 /* CoutomeCollectionViewCell.swift */; };
+		A44DC37F1F14B6C800D20891 /* CoutomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44DC37D1F14B6C800D20891 /* CoutomeCollectionViewCell.xib */; };
 		A4F39DED1F13BB0D00720B50 /* CoutomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F39DEB1F13BB0D00720B50 /* CoutomeCell.swift */; };
 		A4F39DEE1F13BB0D00720B50 /* CoutomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,9 @@
 		A44474F11F0F8D600070B504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44474F71F0F91530070B504 /* ViewControllerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableView.swift; sourceTree = "<group>"; };
 		A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		A44DC37A1F14B1CE00D20891 /* CustomCollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewVC.swift; sourceTree = "<group>"; };
+		A44DC37C1F14B6C800D20891 /* CoutomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoutomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A44DC37D1F14B6C800D20891 /* CoutomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoutomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		A4F39DEB1F13BB0D00720B50 /* CoutomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoutomeCell.swift; sourceTree = "<group>"; };
 		A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoutomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +73,7 @@
 				A44474E91F0F8D600070B504 /* Main.storyboard */,
 				A44DC3781F149ED000D20891 /* CustomTableView */,
 				A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */,
+				A44DC3791F14B16800D20891 /* CustomCollectionView */,
 				A44474EC1F0F8D600070B504 /* Assets.xcassets */,
 				A44474EE1F0F8D600070B504 /* LaunchScreen.storyboard */,
 				A44474F11F0F8D600070B504 /* Info.plist */,
@@ -82,6 +89,16 @@
 				A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */,
 			);
 			name = CustomTableView;
+			sourceTree = "<group>";
+		};
+		A44DC3791F14B16800D20891 /* CustomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A44DC37A1F14B1CE00D20891 /* CustomCollectionViewVC.swift */,
+				A44DC37C1F14B6C800D20891 /* CoutomeCollectionViewCell.swift */,
+				A44DC37D1F14B6C800D20891 /* CoutomeCollectionViewCell.xib */,
+			);
+			name = CustomCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +134,7 @@
 					A44474E11F0F8D600070B504 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6S9W3HX6S6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -148,6 +166,7 @@
 				A44474F01F0F8D600070B504 /* LaunchScreen.storyboard in Resources */,
 				A44474ED1F0F8D600070B504 /* Assets.xcassets in Resources */,
 				A44474EB1F0F8D600070B504 /* Main.storyboard in Resources */,
+				A44DC37F1F14B6C800D20891 /* CoutomeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +181,9 @@
 				A44DC3771F147C8B00D20891 /* NSObjectExtension.swift in Sources */,
 				A44474E81F0F8D600070B504 /* ViewController.swift in Sources */,
 				A44474F81F0F91530070B504 /* ViewControllerTableView.swift in Sources */,
+				A44DC37B1F14B1CE00D20891 /* CustomCollectionViewVC.swift in Sources */,
 				A44474E61F0F8D600070B504 /* AppDelegate.swift in Sources */,
+				A44DC37E1F14B6C800D20891 /* CoutomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6S9W3HX6S6;
 				INFOPLIST_FILE = TableViewText/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -293,6 +315,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "78956a30-4138-470a-b451-1c23121f75ef";
 				PROVISIONING_PROFILE_SPECIFIER = AllBundleID_XX;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -301,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6S9W3HX6S6;
 				INFOPLIST_FILE = TableViewText/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -309,6 +334,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "78956a30-4138-470a-b451-1c23121f75ef";
 				PROVISIONING_PROFILE_SPECIFIER = AllBundleID_XX;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

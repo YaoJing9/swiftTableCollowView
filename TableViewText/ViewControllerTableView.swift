@@ -28,7 +28,7 @@ class ViewControllerTableView: UIViewController,UITableViewDelegate,UITableViewD
         self.navigationItem.rightBarButtonItem  =   rightBarButt
         
         
-//        self.mainTableView.register(UINib.init(nibName: "CoutomeCell", bundle: nil), forCellReuseIdentifier: "1234")
+//        self.mainTableView.register(UINib.init(nibName: CoutomeCell.className, bundle: nil), forCellReuseIdentifier: CoutomeCell.className)
     }
 
     func clickRightItemButt(){
@@ -74,7 +74,8 @@ class ViewControllerTableView: UIViewController,UITableViewDelegate,UITableViewD
 //        cell.titleLab.text    =   "\(indexPath.section)区-\(str)行"
 //        return  cell
         
-        let cell:CoutomeCell = CoutomeCell().getCoutomeCell(tableView: tableView)
+        let cell:CoutomeCell = CoutomeCell.getCoutomeCell(tableV: tableView)
+            
         let cellAry:NSMutableArray = self.dataAry[indexPath.section] as! NSMutableArray
         let str = cellAry[indexPath.row] as! String
 //        cell.titleLab.text    =   "\(indexPath.section)区-\(str)行"
