@@ -13,10 +13,28 @@
 		A44474ED1F0F8D600070B504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44474EC1F0F8D600070B504 /* Assets.xcassets */; };
 		A44474F01F0F8D600070B504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44474EE1F0F8D600070B504 /* LaunchScreen.storyboard */; };
 		A44474F81F0F91530070B504 /* ViewControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44474F71F0F91530070B504 /* ViewControllerTableView.swift */; };
+		A44C0D4C1F189EA000B74014 /* CoutomeCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C0D491F189EA000B74014 /* CoutomeCollectionViewCellModel.m */; };
+		A44C0D7B1F18A99200B74014 /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C0D7A1F18A99200B74014 /* Items.m */; };
 		A44DC3771F147C8B00D20891 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */; };
 		A44DC37B1F14B1CE00D20891 /* CustomCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DC37A1F14B1CE00D20891 /* CustomCollectionViewVC.swift */; };
 		A44DC37E1F14B6C800D20891 /* CoutomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DC37C1F14B6C800D20891 /* CoutomeCollectionViewCell.swift */; };
 		A44DC37F1F14B6C800D20891 /* CoutomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44DC37D1F14B6C800D20891 /* CoutomeCollectionViewCell.xib */; };
+		A49225F41F27465C008F34E9 /* CollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49225F31F27465C008F34E9 /* CollectionReusableHeaderView.swift */; };
+		A49225F61F27639E008F34E9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A49225F51F27639E008F34E9 /* README.md */; };
+		A49225F81F2768C5008F34E9 /* 支付宝部分Icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A49225F71F2768C5008F34E9 /* 支付宝部分Icon.bundle */; };
+		A4C94EA11F25EA99009AC1EB /* 信用卡还款.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E971F25EA99009AC1EB /* 信用卡还款.png */; };
+		A4C94EA21F25EA99009AC1EB /* 充值中心.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E981F25EA99009AC1EB /* 充值中心.png */; };
+		A4C94EA31F25EA99009AC1EB /* 到位.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E991F25EA99009AC1EB /* 到位.png */; };
+		A4C94EA41F25EA99009AC1EB /* 医疗健康.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E9A1F25EA99009AC1EB /* 医疗健康.png */; };
+		A4C94EA51F25EA99009AC1EB /* 城市服务.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E9B1F25EA99009AC1EB /* 城市服务.png */; };
+		A4C94EA61F25EA99009AC1EB /* 我的客服.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E9C1F25EA99009AC1EB /* 我的客服.png */; };
+		A4C94EA71F25EA99009AC1EB /* 我的快递.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E9D1F25EA99009AC1EB /* 我的快递.png */; };
+		A4C94EA81F25EA99009AC1EB /* 生活号.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E9E1F25EA99009AC1EB /* 生活号.png */; };
+		A4C94EA91F25EA99009AC1EB /* 生活缴费.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94E9F1F25EA99009AC1EB /* 生活缴费.png */; };
+		A4C94EAA1F25EA99009AC1EB /* 记账本.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94EA01F25EA99009AC1EB /* 记账本.png */; };
+		A4C94EAC1F25EAC9009AC1EB /* canAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94EAB1F25EAC9009AC1EB /* canAdd.png */; };
+		A4C94EAE1F25EAD1009AC1EB /* hadAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94EAD1F25EAD1009AC1EB /* hadAdd.png */; };
+		A4C94EB01F25EAD8009AC1EB /* canDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C94EAF1F25EAD8009AC1EB /* canDelete.png */; };
 		A4F39DED1F13BB0D00720B50 /* CoutomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F39DEB1F13BB0D00720B50 /* CoutomeCell.swift */; };
 		A4F39DEE1F13BB0D00720B50 /* CoutomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */; };
 /* End PBXBuildFile section */
@@ -30,10 +48,32 @@
 		A44474EF1F0F8D600070B504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44474F11F0F8D600070B504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44474F71F0F91530070B504 /* ViewControllerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableView.swift; sourceTree = "<group>"; };
+		A44C0D471F189EA000B74014 /* CoutomeCollectionViewCellDataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoutomeCollectionViewCellDataModels.h; sourceTree = "<group>"; };
+		A44C0D481F189EA000B74014 /* CoutomeCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoutomeCollectionViewCellModel.h; sourceTree = "<group>"; };
+		A44C0D491F189EA000B74014 /* CoutomeCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoutomeCollectionViewCellModel.m; sourceTree = "<group>"; };
+		A44C0D4E1F189F9400B74014 /* TableViewText-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TableViewText-Bridging-Header.h"; sourceTree = "<group>"; };
+		A44C0D791F18A99200B74014 /* Items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
+		A44C0D7A1F18A99200B74014 /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
 		A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		A44DC37A1F14B1CE00D20891 /* CustomCollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewVC.swift; sourceTree = "<group>"; };
 		A44DC37C1F14B6C800D20891 /* CoutomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoutomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A44DC37D1F14B6C800D20891 /* CoutomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoutomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A49225F31F27465C008F34E9 /* CollectionReusableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableHeaderView.swift; sourceTree = "<group>"; };
+		A49225F51F27639E008F34E9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A49225F71F2768C5008F34E9 /* 支付宝部分Icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "支付宝部分Icon.bundle"; sourceTree = "<group>"; };
+		A4C94E971F25EA99009AC1EB /* 信用卡还款.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "信用卡还款.png"; sourceTree = "<group>"; };
+		A4C94E981F25EA99009AC1EB /* 充值中心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "充值中心.png"; sourceTree = "<group>"; };
+		A4C94E991F25EA99009AC1EB /* 到位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "到位.png"; sourceTree = "<group>"; };
+		A4C94E9A1F25EA99009AC1EB /* 医疗健康.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "医疗健康.png"; sourceTree = "<group>"; };
+		A4C94E9B1F25EA99009AC1EB /* 城市服务.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "城市服务.png"; sourceTree = "<group>"; };
+		A4C94E9C1F25EA99009AC1EB /* 我的客服.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的客服.png"; sourceTree = "<group>"; };
+		A4C94E9D1F25EA99009AC1EB /* 我的快递.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的快递.png"; sourceTree = "<group>"; };
+		A4C94E9E1F25EA99009AC1EB /* 生活号.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "生活号.png"; sourceTree = "<group>"; };
+		A4C94E9F1F25EA99009AC1EB /* 生活缴费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "生活缴费.png"; sourceTree = "<group>"; };
+		A4C94EA01F25EA99009AC1EB /* 记账本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "记账本.png"; sourceTree = "<group>"; };
+		A4C94EAB1F25EAC9009AC1EB /* canAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canAdd.png; sourceTree = "<group>"; };
+		A4C94EAD1F25EAD1009AC1EB /* hadAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hadAdd.png; sourceTree = "<group>"; };
+		A4C94EAF1F25EAD8009AC1EB /* canDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canDelete.png; sourceTree = "<group>"; };
 		A4F39DEB1F13BB0D00720B50 /* CoutomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoutomeCell.swift; sourceTree = "<group>"; };
 		A4F39DEC1F13BB0D00720B50 /* CoutomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoutomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +92,7 @@
 		A44474D91F0F8D600070B504 = {
 			isa = PBXGroup;
 			children = (
+				A49225F51F27639E008F34E9 /* README.md */,
 				A44474E41F0F8D600070B504 /* TableViewText */,
 				A44474E31F0F8D600070B504 /* Products */,
 			);
@@ -71,6 +112,7 @@
 				A44474E51F0F8D600070B504 /* AppDelegate.swift */,
 				A44474E71F0F8D600070B504 /* ViewController.swift */,
 				A44474E91F0F8D600070B504 /* Main.storyboard */,
+				A44C0D4E1F189F9400B74014 /* TableViewText-Bridging-Header.h */,
 				A44DC3781F149ED000D20891 /* CustomTableView */,
 				A44DC3761F147C8B00D20891 /* NSObjectExtension.swift */,
 				A44DC3791F14B16800D20891 /* CustomCollectionView */,
@@ -79,6 +121,20 @@
 				A44474F11F0F8D600070B504 /* Info.plist */,
 			);
 			path = TableViewText;
+			sourceTree = "<group>";
+		};
+		A44C0D461F189EA000B74014 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A49225F71F2768C5008F34E9 /* 支付宝部分Icon.bundle */,
+				A4C94E951F25EA99009AC1EB /* IconImg */,
+				A44C0D471F189EA000B74014 /* CoutomeCollectionViewCellDataModels.h */,
+				A44C0D481F189EA000B74014 /* CoutomeCollectionViewCellModel.h */,
+				A44C0D491F189EA000B74014 /* CoutomeCollectionViewCellModel.m */,
+				A44C0D791F18A99200B74014 /* Items.h */,
+				A44C0D7A1F18A99200B74014 /* Items.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A44DC3781F149ED000D20891 /* CustomTableView */ = {
@@ -97,8 +153,38 @@
 				A44DC37A1F14B1CE00D20891 /* CustomCollectionViewVC.swift */,
 				A44DC37C1F14B6C800D20891 /* CoutomeCollectionViewCell.swift */,
 				A44DC37D1F14B6C800D20891 /* CoutomeCollectionViewCell.xib */,
+				A49225F31F27465C008F34E9 /* CollectionReusableHeaderView.swift */,
+				A44C0D461F189EA000B74014 /* Model */,
 			);
 			name = CustomCollectionView;
+			sourceTree = "<group>";
+		};
+		A4C94E951F25EA99009AC1EB /* IconImg */ = {
+			isa = PBXGroup;
+			children = (
+				A4C94EAF1F25EAD8009AC1EB /* canDelete.png */,
+				A4C94EAD1F25EAD1009AC1EB /* hadAdd.png */,
+				A4C94EAB1F25EAC9009AC1EB /* canAdd.png */,
+				A4C94E961F25EA99009AC1EB /* 便民生活 */,
+			);
+			path = IconImg;
+			sourceTree = "<group>";
+		};
+		A4C94E961F25EA99009AC1EB /* 便民生活 */ = {
+			isa = PBXGroup;
+			children = (
+				A4C94E971F25EA99009AC1EB /* 信用卡还款.png */,
+				A4C94E981F25EA99009AC1EB /* 充值中心.png */,
+				A4C94E991F25EA99009AC1EB /* 到位.png */,
+				A4C94E9A1F25EA99009AC1EB /* 医疗健康.png */,
+				A4C94E9B1F25EA99009AC1EB /* 城市服务.png */,
+				A4C94E9C1F25EA99009AC1EB /* 我的客服.png */,
+				A4C94E9D1F25EA99009AC1EB /* 我的快递.png */,
+				A4C94E9E1F25EA99009AC1EB /* 生活号.png */,
+				A4C94E9F1F25EA99009AC1EB /* 生活缴费.png */,
+				A4C94EA01F25EA99009AC1EB /* 记账本.png */,
+			);
+			path = "便民生活";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +248,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C94EA11F25EA99009AC1EB /* 信用卡还款.png in Resources */,
+				A49225F81F2768C5008F34E9 /* 支付宝部分Icon.bundle in Resources */,
+				A4C94EA31F25EA99009AC1EB /* 到位.png in Resources */,
+				A4C94EA51F25EA99009AC1EB /* 城市服务.png in Resources */,
+				A4C94EAC1F25EAC9009AC1EB /* canAdd.png in Resources */,
 				A4F39DEE1F13BB0D00720B50 /* CoutomeCell.xib in Resources */,
 				A44474F01F0F8D600070B504 /* LaunchScreen.storyboard in Resources */,
 				A44474ED1F0F8D600070B504 /* Assets.xcassets in Resources */,
+				A4C94EA41F25EA99009AC1EB /* 医疗健康.png in Resources */,
+				A4C94EAE1F25EAD1009AC1EB /* hadAdd.png in Resources */,
+				A4C94EA81F25EA99009AC1EB /* 生活号.png in Resources */,
+				A4C94EA71F25EA99009AC1EB /* 我的快递.png in Resources */,
+				A4C94EB01F25EAD8009AC1EB /* canDelete.png in Resources */,
+				A4C94EA91F25EA99009AC1EB /* 生活缴费.png in Resources */,
+				A4C94EA61F25EA99009AC1EB /* 我的客服.png in Resources */,
+				A4C94EA21F25EA99009AC1EB /* 充值中心.png in Resources */,
+				A4C94EAA1F25EA99009AC1EB /* 记账本.png in Resources */,
 				A44474EB1F0F8D600070B504 /* Main.storyboard in Resources */,
 				A44DC37F1F14B6C800D20891 /* CoutomeCollectionViewCell.xib in Resources */,
 			);
@@ -180,9 +280,13 @@
 				A4F39DED1F13BB0D00720B50 /* CoutomeCell.swift in Sources */,
 				A44DC3771F147C8B00D20891 /* NSObjectExtension.swift in Sources */,
 				A44474E81F0F8D600070B504 /* ViewController.swift in Sources */,
+				A44C0D7B1F18A99200B74014 /* Items.m in Sources */,
 				A44474F81F0F91530070B504 /* ViewControllerTableView.swift in Sources */,
 				A44DC37B1F14B1CE00D20891 /* CustomCollectionViewVC.swift in Sources */,
 				A44474E61F0F8D600070B504 /* AppDelegate.swift in Sources */,
+				A44C0D4C1F189EA000B74014 /* CoutomeCollectionViewCellModel.m in Sources */,
+				A49225F41F27465C008F34E9 /* CollectionReusableHeaderView.swift in Sources */,
+				A49225F61F27639E008F34E9 /* README.md in Sources */,
 				A44DC37E1F14B6C800D20891 /* CoutomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +359,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "TableViewText/TableViewText-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -297,6 +402,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TableViewText/TableViewText-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -315,7 +421,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "78956a30-4138-470a-b451-1c23121f75ef";
 				PROVISIONING_PROFILE_SPECIFIER = AllBundleID_XX;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TableViewText/TableViewText-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -334,7 +440,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "78956a30-4138-470a-b451-1c23121f75ef";
 				PROVISIONING_PROFILE_SPECIFIER = AllBundleID_XX;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TableViewText/TableViewText-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

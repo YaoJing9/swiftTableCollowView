@@ -24,23 +24,29 @@ class ViewControllerTableView: UIViewController,UITableViewDelegate,UITableViewD
         
         self.automaticallyAdjustsScrollViewInsets   =   false//;true
         
-        let rightBarButt = UIBarButtonItem.init(title: "插入", style: UIBarButtonItemStyle.done, target: self, action:#selector(clickRightItemButt))
-        self.navigationItem.rightBarButtonItem  =   rightBarButt
+        //rightBarButtonItem
+        let button = UIButton.init(type: UIButtonType.custom)
+        button.titleLabel?.font =   UIFont.systemFont(ofSize: 15)
+        button.setTitle("编辑", for: UIControlState.normal)
+        button.setTitle("完成", for: UIControlState.selected)
+        button.sizeToFit()
+        button.setTitleColor(UIColor.purple, for: UIControlState.normal)
+        button.addTarget(self, action: #selector(clickEdit(butt:)), for: UIControlEvents.touchUpInside)
+        self.navigationItem.rightBarButtonItem  =   UIBarButtonItem.init(customView: button)
         
-        
-//        self.mainTableView.register(UINib.init(nibName: CoutomeCell.className, bundle: nil), forCellReuseIdentifier: CoutomeCell.className)
     }
 
-    func clickRightItemButt(){
-        print("点击右边插入")
+    @objc private func clickEdit(butt:UIButton) {
+        butt.isSelected =   !butt.isSelected
         mainTableView.setEditing(!self.mainTableView.isEditing, animated: true)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//MARK: -   UITableViewDataSource
     
+//MARK: -   UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return  self.dataAry.count;
     }
@@ -52,27 +58,6 @@ class ViewControllerTableView: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //
-//        var cell = tableView.dequeueReusableCell(withIdentifier: "1234")
-//        
-//        if cell==nil {
-//            cell    =   UITableViewCell.init(style:UITableViewCellStyle.default, reuseIdentifier: "1234")
-//        }
-//        
-//        let cellAry:NSMutableArray = self.dataAry[indexPath.section] as! NSMutableArray
-//        let str = cellAry[indexPath.row] as! String
-//        
-//        cell?.textLabel?.text    =   "\(indexPath.section)区-\(str)行"
-//        
-//        return  cell!
-        
-        //
-//        let cell:CoutomeCell = tableView.dequeueReusableCell(withIdentifier: "1234") as! CoutomeCell
-//        
-//        let cellAry:NSMutableArray = self.dataAry[indexPath.section] as! NSMutableArray
-//        let str = cellAry[indexPath.row] as! String
-//        cell.titleLab.text    =   "\(indexPath.section)区-\(str)行"
-//        return  cell
         
         let cell:CoutomeCell = CoutomeCell.getCoutomeCell(tableV: tableView)
             
@@ -92,20 +77,17 @@ class ViewControllerTableView: UIViewController,UITableViewDelegate,UITableViewD
         let lab = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 20))
         lab.text    =   str
         
-//        let str:String =   String.init(describing: type(of: CoutomeCell)).components(separatedBy: ".").last as! String
-        
         print("\(CoutomeCell.className)---\(String.init(describing: type(of: CoutomeCell())).components(separatedBy: ".").last!)")
         
         return  lab;
     }
     
     
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 20
     }
     
-    //MARK:     -   delete || insert
+//MARK:     -   delete || insert
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -147,7 +129,8 @@ class ViewControllerTableView: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String?{
         return "删除"
     }
-    //MARK:     -   Move
+    
+//MARK:     -   Move
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -176,10 +159,8 @@ class ViewControllerTableView: UIViewController,UITableViewDelegate,UITableViewD
         }
         
     }
-//    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
-//        
-//    }
-//MARK:  -   Lazy
+
+//MARK:  -   Lazy 数据
     lazy var  dataAry = { () -> NSMutableArray in
         
         var muAry   =   NSMutableArray.init()
